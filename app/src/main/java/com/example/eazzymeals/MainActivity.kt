@@ -1,5 +1,6 @@
 package com.example.eazzymeals
 
+import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -10,24 +11,37 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import kotlin.system.exitProcess
 
 
 class MainActivity : AppCompatActivity() {
     private var timeOfDayInput: EditText? = null
-
+    private var result: TextView? = null
+    @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
         val timeOfDayInput = findViewById<EditText>(R.id.timeOfDayInput)
         val showMealsButton = findViewById<Button>(R.id.showMealsButton)
+        val clearbtn = findViewById<Button>(R.id.clearbtn)
+        val exitbtn = findViewById<Button>(R.id.exitbtn)
+
+        clearbtn.setOnClickListener {
+            timeOfDayInput?.text?.clear()
+            result?.text = ""
+        }
+
+        exitbtn.setOnClickListener {
+            finishAffinity()
+            exitProcess(0)
+        }
 
         showMealsButton.setOnClickListener {
             val timeOfDay = timeOfDayInput.text.toString().trim() // Trim whitespace
 
             if (timeOfDay.isEmpty()) {
                 // Show a message to the user
-                Toast.makeText(this, "Please enter the time of day", Toast.LENGTH_SHORT).show()
             } else {
                 // Create an Intent to start MealChoicesActivity
                 val intent = Intent(this, MealChoicesActivity::class.java)
@@ -38,7 +52,8 @@ class MainActivity : AppCompatActivity() {
                 // Start the MealChoicesActivity
                 startActivity(intent)
             }
+
+
         }
     }
 }
-

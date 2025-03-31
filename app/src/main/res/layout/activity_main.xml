@@ -32,7 +32,7 @@
         android:layout_marginBottom="22dp"
         android:text="EAZY.MEALS"
         android:textColor="@color/white"
-        android:textSize="40dp"
+        android:textSize="35sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toTopOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
@@ -49,6 +49,7 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="200dp"
         android:ems="10"
+        android:textAllCaps="true"
         android:hint="Enter time of day"
         android:text=""
         android:textStyle="bold"
@@ -73,7 +74,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/clearbtn"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/timeOfDay"
+        app:layout_constraintTop_toBottomOf="@+id/timeOfDayInput"
         app:layout_constraintVertical_bias="1.0" />
 
     <Button
@@ -89,8 +90,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/enterbtn"
-        app:layout_constraintTop_toBottomOf="@+id/timeOfDay"
+        app:layout_constraintTop_toBottomOf="@+id/timeOfDayInput"
         app:layout_constraintVertical_bias="1.0" />
 
     <TextView
@@ -108,8 +108,10 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterbtn" />
+        app:layout_constraintTop_toBottomOf="@+id/timeOfDayInput"
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/result"
@@ -127,6 +129,23 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.909" />
+
+    <Button
+        android:id="@+id/exitbtn"
+        android:layout_width="118dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="179dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="142dp"
+        android:layout_marginBottom="21dp"
+        android:backgroundTint="#AE37B3"
+        android:text="Exit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showMealsButton"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
