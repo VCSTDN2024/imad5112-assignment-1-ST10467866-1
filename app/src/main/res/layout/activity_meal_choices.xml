@@ -31,7 +31,7 @@
         android:id="@+id/timeOfDayDisplay"
         android:layout_width="260dp"
         android:layout_height="66dp"
-        android:layout_marginBottom="112dp"
+        android:layout_marginBottom="68dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="20sp"
@@ -39,7 +39,7 @@
         app:layout_constraintBottom_toTopOf="@+id/mealOptionsDisplay"
 
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintHorizontal_bias="0.536"
         app:layout_constraintStart_toStartOf="parent"
         tools:text="Time of Day: Morning" />
 
@@ -47,9 +47,9 @@
         android:id="@+id/mealOptionsDisplay"
         android:layout_width="237dp"
         android:layout_height="122dp"
-        android:layout_marginStart="104dp"
+        android:layout_marginStart="90dp"
         android:layout_marginEnd="70dp"
-        android:layout_marginBottom="116dp"
+        android:layout_marginBottom="108dp"
         android:gravity="center"
         android:textColor="@color/black"
         android:textSize="20sp"

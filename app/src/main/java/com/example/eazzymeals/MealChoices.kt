@@ -47,22 +47,22 @@ class MealChoicesActivity : AppCompatActivity() {
                 mealOptionsDisplay.text = "Meal Options: Unable to determine"
             } else {
 
-                timeOfDayDisplay.text = "Time of Day: $timeOfDay"
+                timeOfDayDisplay.text = "Time of Day:\n $timeOfDay"
 
                 val mealOptions = getMealOptions(timeOfDay)
 
-                mealOptionsDisplay.text = "Meal Options: $mealOptions"
+                mealOptionsDisplay.text = "Meal Options:\n $mealOptions"
             }
         }
         // Function to determine meal options based on the time of day
         fun getMealOptions(timeOfDay: String?): String {
             return when (timeOfDay?.lowercase()) {
-                "morning" -> listOf("English breakfast", "Oatmeal", "Breakfast burrito").random()
-                "mid-morning" -> listOf("Muslei with yogurt", "Fruit salad", "Smoothie").random()
-                "lunch" -> listOf("Sandwich", "Burger", "Wrap").random()
-                "afternoon snack" -> listOf("Popcorn", "Nuts", "Crackers and cheese").random()
-                "dinner" -> listOf("Pasta", "Curry", "Spicy rice and chicken").random()
-                "evening snack" -> listOf("Ice cream", "Smores", "Tea and cake").random()
+                "morning" -> "English breakfast \n Oatmeal \n Breakfast burrito"
+                "mid-morning" -> "Muslei with yogurt \n Fruit salad \n Smoothie"
+                "lunch" -> "Sandwich \n Burger \n Wrap"
+                "afternoon snack" -> "Popcorn \n Nuts \n Crackers and cheese"
+                "dinner" -> "Pasta \n Curry \n Spicy rice and chicken"
+                "evening snack" -> "Ice cream \n Smores \n Tea and cake"
                 else -> "Please enter either : breakfast, mid-morning, lunch, afternoon snack, dinner, or evening snack"
             }
         }
