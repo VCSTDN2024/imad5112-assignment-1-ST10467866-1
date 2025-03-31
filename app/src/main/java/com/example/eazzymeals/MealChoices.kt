@@ -57,13 +57,13 @@ class MealChoicesActivity : AppCompatActivity() {
         // Function to determine meal options based on the time of day
         fun getMealOptions(timeOfDay: String?): String {
             return when (timeOfDay?.lowercase()) {
-                "morning" -> "English breakfast \n Oatmeal \n Breakfast burrito"
-                "mid-morning" -> "Muslei with yogurt \n Fruit salad \n Smoothie"
-                "lunch" -> "Sandwich \n Burger \n Wrap"
-                "afternoon snack" -> "Popcorn \n Nuts \n Crackers and cheese"
-                "dinner" -> "Pasta \n Curry \n Spicy rice and chicken"
-                "evening snack" -> "Ice cream \n Smores \n Tea and cake"
-                else -> "Please enter either : breakfast, mid-morning, lunch, afternoon snack, dinner, or evening snack"
+                "morning" -> "Meal 1:English breakfast \n Meal2:Oatmeal \n Meal 3:Breakfast burrito"
+                "mid-morning" -> "Meal 1:Muslei with yogurt \n Meal 2:Fruit salad \n Meal 3:Smoothie"
+                "lunch" -> "Meal 1:Sandwich \n Meal 2:Burger \n Meal 3:Wrap"
+                "afternoon snack" -> "Meal 1:Popcorn \n Meal 2:Nuts \n Meal 3:Crackers and cheese"
+                "dinner" -> "Meal 1:Pasta \n Meal 2:Curry \n Meal 3:Spicy rice and chicken"
+                "evening snack" -> "Meal 1:Ice cream \n Meal 2:Smores \n Meal 3:Tea and cake"
+                else -> "Please enter either : morning, mid-morning, lunch, afternoon snack, dinner, or evening snack"
             }
         }
     }
