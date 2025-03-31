@@ -5,43 +5,40 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 
+
 class MainActivity : AppCompatActivity() {
-    private lateinit var timeOfDay: EditText
-    private lateinit var enterbtn: Button
-    private lateinit var clearbtn: Button
-    private lateinit var result: TextView
+    private var timeOfDayInput: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
-            val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
-            insets
-        }
+        val timeOfDayInput = findViewById<EditText>(R.id.timeOfDayInput)
+        val showMealsButton = findViewById<Button>(R.id.showMealsButton)
 
-        timeOfDay = findViewById(R.id.timeOfDay)
-        enterbtn = findViewById(R.id.enterbtn)
-        clearbtn = findViewById(R.id.clearbtn)
-        result = findViewById(R.id.result)
+        showMealsButton.setOnClickListener {
+            val timeOfDay = timeOfDayInput.text.toString().trim() // Trim whitespace
 
-        clearbtn.setOnClickListener {
-            timeOfDay.text = null
-            result.text = null
-        }
+            if (timeOfDay.isEmpty()) {
+                // Show a message to the user
+                Toast.makeText(this, "Please enter the time of day", Toast.LENGTH_SHORT).show()
+            } else {
+                // Create an Intent to start MealChoicesActivity
+                val intent = Intent(this, MealChoicesActivity::class.java)
 
-        enterbtn.setOnClickListener {
-            val timeOfDayValue = timeOfDay.text.toString() // Get the text from timeOfDay EditText
-            val intent = Intent(this, MealChoices::class.java)
-            intent.putExtra("TIME_OF_DAY", timeOfDayValue) // Add the value as an extra
-            startActivity(intent)
+                // Add the time of day as an extra to the Intent
+                intent.putExtra("TIME_OF_DAY", timeOfDay)
+
+                // Start the MealChoicesActivity
+                startActivity(intent)
+            }
         }
     }
 }
+
