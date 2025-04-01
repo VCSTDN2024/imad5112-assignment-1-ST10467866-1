@@ -27,11 +27,15 @@ class MainActivity : AppCompatActivity() {
         val clearbtn = findViewById<Button>(R.id.clearbtn)
         val exitbtn = findViewById<Button>(R.id.exitbtn)
 
+
+        //clear button used to clear data
         clearbtn.setOnClickListener {
             timeOfDayInput?.text?.clear()
             result?.text = ""
         }
 
+
+        //exit button used to exit app
         exitbtn.setOnClickListener {
             finishAffinity()
             exitProcess(0)
@@ -49,7 +53,6 @@ class MainActivity : AppCompatActivity() {
                 // Add the time of day as an extra to the Intent
                 intent.putExtra("TIME_OF_DAY", timeOfDay)
 
-                // Start the MealChoicesActivity
                 startActivity(intent)
             }
 
