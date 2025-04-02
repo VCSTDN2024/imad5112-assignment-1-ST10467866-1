@@ -48,7 +48,8 @@ The main goal of this app is to provide a user with a variety of meal options ba
 *The second screen showing where the meal choices will be displayed
 
 ### Video Demo:
-A video showcasing the app's functionality can be viewed here: [YouTube Video Link:]
+Explanation video on Youtube:  https://youtu.be/5tDH2Pq7lbs
+
 ## Challenges and Learnings
 
 During the development of this project, I encountered several challenges, including:
