@@ -1,37 +1,35 @@
-# Eazzy.Meals
-- **Developer**: Leah Naiker
+# Welcome to Eazzy.Meals
+
+## Personal information
+
+- **Developed by**: Leah Naiker
 - **Student Number**: ST10467866
 - **Group**: GR.01
 - **Course**: HMAW0501
-- **Subject**: IMAD5112
-
-## Links
 - **GitHub Repository**: https://github.com/ST10467866/Ass1
-- **YouTube Video**: YouTube Video Link
+- **Explanation Video**: : https://youtu.be/5tDH2Pq7lbs
 
-# Project overview
+# Project description:
 
-The **Eazzy.Meals** is a mobile application developed as part of an assignment in the IMAD5111 subject. This application was created using **Kotlin** and **Android Studio**. The app's primary purpose is to Display meal options based on the time of day.
-
-The app was developed to meet the requirements of the assignment, which includes creating a functional mobile app and utilizing GitHub for version control and CI/CD automation using GitHub Actions.
-
-## Purpose and Features
+The **Eazzy.Meals** is a mobile application that was developed using **Kotlin** and **Android Studio**. The app consists of two screens, making it less overwhelming for a user to use. **Eazzt.Meals** has the ability to clear information entered by a user as well as enter information entered by a user.
 
 ### Purpose:
 The main goal of this app is to provide a user with a variety of meal options based on the time of day, making it fun and easy for a user to use. 
 
-### Key Features:
+### Features:
 - Feature 1: User login functionality
 - Feature 2: Display random meal options per time of day
 - Feature 3: Clear button, enter button and exit button
 - Feature 4: First screen displays where the user will enter the time of day having the enter button as well as the clear button and exit button
 - Feature 5: Second screen displays meal choices based on the time of day inputed on the first screen as well as a back button
 
-These features aim to provide The best meals suited for the user.
+## Future features:
+
+1. **Feature 1**: Ingredient list
+2. **Feature 2**: Having a 3rd screen
+3. **Feature 3**: A way to share the meal options with a friend
 
 ## Design Considerations:
-
-The design of the **Eazzy.Meals** was based on the following key considerations:
 
 1. **User Experience (UX)**: The app was designed with the goal of providing an intuitive and easy-to-navigate user interface, ensuring a seamless user experience.
    
@@ -41,23 +39,7 @@ The design of the **Eazzy.Meals** was based on the following key considerations:
    
 4. **Performance**: Code optimization was considered to ensure fast response times and low battery usage.
 
-
-## GitHub and GitHub Actions
-
-This project was managed using **GitHub** for version control, where all code changes were committed and pushed regularly. GitHub enabled collaborative coding, allowing me to keep track of changes and maintain project integrity.
-
-## GitHub Actions:
-I utilized **GitHub Actions** to automate the build and deployment process. This includes:
-
-- Running automated **tests** to ensure the app’s functionality.
-- Compiling the app into **APK** and **AAB** files, which are the formats required for distribution.
-- Uploading these build artifacts to GitHub for easy access.
-
-The workflow ensures that my project is automatically built and tested every time I push changes, and it simplifies the process of delivering the final APK/AAB files for submission.
-
-## Screenshots
-
-### App Screenshots:
+##Screenshots:
  ![2025-03-31](https://github.com/user-attachments/assets/ffe7304e-353e-4489-9fe0-ae287ee62140)
 
 *Home screen of app showing where the user will input the time of day
@@ -79,13 +61,9 @@ During the development of this project, I encountered several challenges, includ
 
 From these challenges, I learned important lessons in debugging, using version control, and automating build processes with GitHub Actions.
 
-## Future Enhancements
-While the current version of the app provides the core functionality, there are several features that could be added in the future, including:
+## GitHub Actions
 
-1. **Feature 1**: Ingredient list
-2. **Feature 2**: Having a 3rd screen
-3. **Feature 3**: A way to share the meal options with a friend
-These enhancements would improve the app’s usability and make it even more versatile for end-users.
+This project was managed using **GitHub**, where all code changes were committed and pushed. This allowed me to keep track of changes.
 
 ## References
 
@@ -94,9 +72,9 @@ These enhancements would improve the app’s usability and make it even more ver
 ## List of Figures
 
 - **Figure 1**: Screenshot of the app's home screen.
-- **Figure 2**: Screenshot of the user profile screen.
+- **Figure 2**: Screenshot of second screen.
 
-## Disclosure of AI Usage in My Assessment
+## Disclosure of AI Usage in My Assignment:
 In the development of this project, I have used generative AI tools to assist in various parts of the assignment. Below is a detailed disclosure of where and how these tools were used:
 
 ### 1. **Section(s) in which Generative AI was used:**
