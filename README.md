@@ -6,7 +6,7 @@
 - **Student Number**: ST10467866
 - **Group**: GR.01
 - **Course**: HMAW0501
-- **GitHub Repository**: https://github.com/ST10467866/Ass1
+- **GitHub Repository**: https://github.com/VCSTDN2024/imad5112-assignment-1-ST10467866-1
 - **Explanation Video**: : https://youtu.be/5tDH2Pq7lbs
 
 # Project description:
